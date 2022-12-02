@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  background: rgb(34, 193, 195);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#fdbb2d",GradientType=1);
+}
+header {
+  display: contents;
+}
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+h1,
+h2,
+p {
+  font-family: Palatino;
+}
+h1 {
+  color: rgba(0, 0, 0, 0.6);
+}
+.nav {
+  background-color: rgb(30, 30, 30);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 75px;
+}
+
+.nav-list {
+  margin: 0 auto;
+  width: 600px;
+  height: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+a.nav-link {
+  display: block;
+  color: aliceblue;
+  padding: 0.2em;
+  border-radius: 5px;
+  transition: 100ms all linear;
+}
+.nav-link:hover {
+  color: aquamarine;
+  font-size: 125%;
+  position: relative;
+  top: -0.25em;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+}
+.nav-link:focus {
+  color: rgb(253, 187, 45);
+  font-size: 120%;
+  position: relative;
+  top: -0.25em;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+.container,
+.content {
+  width: 600px;
+  height: auto;
+  margin: 50px auto;
+}
+
+.container {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+}
+.container h1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-photo {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  transition: 2s transform cubic-bezier(0.81, 0.26, 0.17, 0.76) 500ms;
+  transform: rotateY(0deg);
+}
+.main-photo:hover {
+  transform: rotateY(360deg);
+}
+
+.content {
+  margin: 30px;
+}
+
+.content p,
+.content ol,
+.content ul {
+  margin-left: 20px;
+}
+.footer {
+  margin-top: 30px;
+  background-color: rgb(30, 30, 30);
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.footer-text {
+  padding: 50px;
+}
+#contacts {
+  margin-bottom: 10px;
+}
+
+a[href^="mailto:"],
+a[href^="tel:"] {
+  color: rgb(253, 187, 45);
+}

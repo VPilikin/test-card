@@ -4,33 +4,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <title>Визитка</title>
   </head>
   <body>
     <header>
-      <h1>Виталий Пиликин. Frontend-разработчик</h1>
-      <img src="My photo.JPG" alt="Мое фото" />
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">Обо мне</a></li>
+          <li><a href="#education" class="nav-link">Образование</a></li>
+          <li><a href="#skills" class="nav-link">Навыки</a></li>
+          <li>
+            <a href="#make-dev" class="nav-link">Как я стал разработчиком</a>
+          </li>
+          <li><a href="#contacts" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        <h1>
+          Виталий Пиликин
+          <br />
+          Frontend-разработчик
+        </h1>
+        <img src="My photo.JPG" class="main-photo" alt="Мое фото" />
+      </div>
     </header>
     <main>
-      <h2>Обо мне</h2>
-      <p>Возраст: <strong>30</strong> лет</p>
-      <p>Родился в Балтийске. Живу в Калининграде. Работаю на работе</p>
-      <h2>Образование</h2>
-      <p><strong>Высшее</strong></p>
-      <p>КГТУ БГА РФ г. Калининград</p>
-      <h2>Навыки</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Перфоратор</li>
-        <li>Молоток</li>
-      </ul>
-      <h2>Как я стал разработчиком</h2>
+      <div class="content">
+        <h2 id="about">Обо мне</h2>
+        <p>Возраст: <strong>30</strong> лет</p>
+        <p>Родился в Балтийске. Живу в Калининграде. Работаю на работе</p>
+      </div>
+      <div class="content">
+        <h2 id="education">Образование</h2>
+        <p><strong>Высшее</strong></p>
+        <p>КГТУ БГА РФ г. Калининград</p>
+      </div>
+      <div class="content">
+        <h2 id="skills">Навыки</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Перфоратор</li>
+          <li>Молоток</li>
+        </ul>
+      </div>
+      <div class="content">
+        <h2 id="make-dev">Как я стал разработчиком</h2>
+        <ol class="make-dev-list">
+          <li>Изучал самостоятельно на YouTube</li>
+          <li>Купил курс на Skillfactory</li>
+          <li>Создал первый сайт-визитку используя только HTML</li>
+          <li>Подключил к визитке свой первый файл .css</li>
+        </ol>
+      </div>
     </main>
-    <footer>
-      <h2>Контакты</h2>
-      <p>Телефон: <a href="tel:617244">617244</a></p>
-      <p>E-mail: <a href="mailto:oversea@bk.ru">oversea@bk.ru</a></p>
+    <footer class="footer">
+      <div class="footer-text">
+        <h2 id="contacts">Контакты</h2>
+        <p>Телефон: <a href="tel:617244">617244</a></p>
+        <p>E-mail: <a href="mailto:oversea@bk.ru">oversea@bk.ru</a></p>
+      </div>
     </footer>
   </body>
 </html>
